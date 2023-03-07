@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
- 
+import UseStateArray from './components/UseStateArray'
 const App = () =>{
   // console.log(useState('Surya'));
 
@@ -11,7 +11,17 @@ const App = () =>{
   const changeName = () =>{
     // val = 'Surya Kurumbang';
     // console.log(val)
-    func('Thapa Technical')
+
+    // to return original
+    let val = myName;
+    if(val === 'Surya Kurumbang'){
+      func('Thapa Technical');
+    }
+    else{
+      func('Surya Kurumbang')
+    }
+
+   
   }
   return (
     <>
